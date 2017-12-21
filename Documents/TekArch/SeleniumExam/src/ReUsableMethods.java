@@ -43,7 +43,7 @@ public class ReUsableMethods extends Driver {
 	static String browserName;
 	public static void enterText(WebElement obj, String textVal, String objName) throws IOException {
 		if (obj.isDisplayed()) {
-			obj.clear();
+			//obj.clear();
 			obj.sendKeys(textVal);
 			Update_Report("Pass", "enterText", textVal+ " is entered in " + objName + " field");
 			System.out.println("Pass: " + textVal + " is entered in " + objName + " field");
